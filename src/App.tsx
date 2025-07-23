@@ -88,19 +88,16 @@ const App: React.FC = () => {
           definitions={nutrients}
           microNutrients={microNutrients}
         />
+        <br>
 <div className="ad1">
-
+ <hr>
 <p> test </p>
   
         </div>
 
       </div>
 
-<div className="ad1">
 
-<p> test 2 </p>
-  
-        </div>
 
 
 
