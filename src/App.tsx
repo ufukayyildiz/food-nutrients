@@ -9,7 +9,7 @@ import {
   calculateMicroNutrients,
 } from "./components/calculations";
 
-import logo from "/logo.png";
+
 
 // Datasets
 import nutrients from "./data/nutrients.json";
