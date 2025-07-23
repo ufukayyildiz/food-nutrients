@@ -19,6 +19,15 @@ code {
   flex-wrap: wrap;
 }
 
+
+.ads1 {
+  text-align: center;
+  display: flex;
+  flex-direction: row;
+  flex-wrap: wrap;
+}
+
+
 .logo {
   width: 100%;
   clear: both;
