@@ -12,7 +12,6 @@ export interface MicroNutrientData {
 interface MicroNutrientProps {
   microNutrient: {
     name: string;
-    wiki: string;
   };
   microNutrientData?: MicroNutrientData | null;
 }
@@ -23,7 +22,6 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
 }) => {
   const [state, setState] = useState<{
     name: string;
-    wiki: string;
     percentage: number;
     raw: number;
     amount: number;
@@ -31,7 +29,6 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
     nutrientStatus: "normal" | "success" | "exception" | "active" | undefined;
   }>({
     name: "",
-    wiki: "#",
     percentage: 0,
     raw: 0,
     amount: 0,
@@ -58,7 +55,6 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
   useEffect(() => {
     setState({
       name: microNutrient.name,
-      wiki: microNutrient.wiki,
       percentage: microNutrientData ? microNutrientData.percentage : 0,
       raw: microNutrientData ? microNutrientData.raw : 0,
       amount: microNutrientData ? microNutrientData.amount : 0,
@@ -74,7 +70,6 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
 
   const {
     name,
-    wiki,
     percentage,
     amount,
     unit,
@@ -84,9 +79,7 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
   return (
     <div key={name} className="microNutrient">
       <div className="microNutrientName">
-        <a target="_blank" rel="noopener noreferrer" href={wiki}>
-          {name}
-        </a>
+        
       </div>
       <div className="microNutrientProgressBar">
         <Progress
