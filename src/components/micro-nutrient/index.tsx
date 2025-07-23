@@ -84,7 +84,9 @@ const MicroNutrient: React.FC<MicroNutrientProps> = ({
   return (
     <div key={name} className="microNutrient">
       <div className="microNutrientName">
-   
+        <a target="_blank" rel="noopener noreferrer" href={wiki}>
+          {name}
+        </a>
       </div>
       <div className="microNutrientProgressBar">
         <Progress
