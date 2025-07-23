@@ -77,9 +77,7 @@ const App: React.FC = () => {
   return (
     <div className="App">
       <div className="leftPanel">
-        <div className="logo">
-          <img alt="Logo" src={logo} />
-        </div>
+
         <Foods updateNutrients={updateNutrients} />
       </div>
       <div className="rightPanel">
@@ -89,11 +87,7 @@ const App: React.FC = () => {
           microNutrients={microNutrients}
         />
        
-<div className="ad1">
 
-<p> test </p>
-  
-        </div>
 
       </div>
 
