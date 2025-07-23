@@ -95,16 +95,16 @@ const App: React.FC = () => {
 
 
 
-
-
-      
-    </div>
-
 <div className="ad1">
 
 <p> test </p>
   
         </div>
+
+      
+    </div>
+
+
     
   );
 };
